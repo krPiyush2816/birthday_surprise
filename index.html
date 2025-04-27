@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday, Love!</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      text-align: center;
+      padding: 50px;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      color: #fff;
+      overflow-x: hidden;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.5em;
+    }
+    button {
+      margin-top: 20px;
+      margin-right: 10px;
+      padding: 15px 25px;
+      background: #ff6f91;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #ff4e73;
+    }
+    .hidden {
+      display: none;
+      margin-top: 20px;
+      animation: fadeIn 2s;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    img {
+      margin-top: 20px;
+      max-width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <h1>Happy Birthday, My Love! meri Softy Queen😘😘🤗🤗❤️❤️🥰🥰🎉🎂</h1>
+  <p>May your day be filled with magic, laughter, and endless love! 💖</p>
+
+  <button onclick="showSurprise()">Click for a Surprise 🎁</button>
+  <button onclick="showImportantMessage()">Important Message 📜</button>
+  <button onclick="showParamSundari()">Param Sundari😘🫂👸🏻</button>
+  <button onclick="showSoftyQueen()">Softy Queen 🥰🥰😘😘👸🏻</button>
+  <button onclick="showEY()">EY GDS Employee😚🫡🫂</button>
+  <button onclick="showExtraMolu()">oumm mou mou molu🥰😚</button>
+  <!-- New buttons added here -->
+  <button onclick="showEzz()">Ezz🥰😘🤗🫂😴</button>
+  <button onclick="showMoluZz()">Molu zz Molii unn naa 🫂🤗😁</button>
+
+  <div id="surprise" class="hidden">
+    <p style="font-size: 1.8em;">Tap the buttons for the surprises 🫵🫂</p>
+  </div>
+
+  <div id="importantMessage" class="hidden">
+    <p style="font-size: 1.8em; padding: 20px;">
+      You are not just my love, you are my everything, my smile, my heart, my soul!  
+      I promise to be with you forever ❤️👫💍<br><br>
+      Bas ek baat boldu ki main tumse bahut pyaar karta hoon aur main khud nahi chahta ki ab kuch bhi bigde hamare beech. 
+      Bas yahi chahata hoon ki sab ache se rahe. Aaj tumhara birthday hai, isliye chhodo jo bhi baatein pehle hui thi. 
+      Agar tumhe kuch galat laga tha, to sorry meri taraf se. Tum bhi wahi chhodo jo mann mein ho, 
+      kyunki sab kuch sahi ho chuka hai pehle ka. Jab sab theek hai, to phir dobara ungli karne ki zarurat nahi hai. ❤️<br><br>
+      Tumhari feelings, tumhari baatein samajhta hoon, aur jaanta hoon tum bhi meri feelings ki value samajh rahi ho, 
+      samajhti ho, aur aage bhi samjhogi. 💞<br><br>
+      Jo bhi tumne bola tha ki "Bhavya ke jagah main apne ghar mein hoti," 
+      vo galat baat thi — aisi baatein sochna bhi mat. Tumhara aur mera rishta sabse alag, sabse pyara hai. ❤️<br><br>
+      Bas flutu mein ladayi nahi karni hai hum dono ko. Tum supportive ho, aur main tumhara hamesha saath chahta hoon.  
+      Love you soooo much meri softy queen 🤗🤗😘😘💕💕🥰🥰🫂🫂
+    </p>
+  </div>
+
+  <div id="paramSundari" class="hidden">
+    <img src="Param Sundari.jpg" alt="Param Sundari">
+  </div>
+
+  <div id="softyQueen" class="hidden">
+    <img src="Molu Queen.jpg" alt="Softy Queen">
+  </div>
+
+  <div id="eyEmployee" class="hidden">
+    <img src="EY GDS Employee.jpg" alt="EY GDS Employee">
+  </div>
+
+  <div id="extraMolu" class="hidden">
+    <img src="oummm mou mou molu.jpg" alt="oumm mou mou molu">
+  </div>
+
+  <!-- New image divs added here -->
+  <div id="ezz" class="hidden">
+    <img src="Ezz.jpg" alt="Ezz🥰😘🤗🫂😴">
+  </div>
+
+  <div id="moluZz" class="hidden">
+    <img src="Molu zzz molii uunn.jpg" alt="Molu zz Molii unn naa 🫂🤗😁">
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script>
+    function hideAll() {
+      document.getElementById('surprise').style.display = 'none';
+      document.getElementById('importantMessage').style.display = 'none';
+      document.getElementById('paramSundari').style.display = 'none';
+      document.getElementById('softyQueen').style.display = 'none';
+      document.getElementById('eyEmployee').style.display = 'none';
+      document.getElementById('extraMolu').style.display = 'none';
+      document.getElementById('ezz').style.display = 'none';
+      document.getElementById('moluZz').style.display = 'none';
+    }
+
+    function showSurprise() {
+      hideAll();
+      document.getElementById('surprise').style.display = 'block';
+      confetti({ particleCount: 200, spread: 70, origin: { y: 0.6 } });
+    }
+
+    function showImportantMessage() {
+      hideAll();
+      document.getElementById('importantMessage').style.display = 'block';
+      confetti({ particleCount: 300, spread: 100, origin: { y: 0.3 } });
+    }
+
+    function showParamSundari() {
+      hideAll();
+      document.getElementById('paramSundari').style.display = 'block';
+      confetti({ particleCount: 250, spread: 80, origin: { y: 0.5 } });
+    }
+
+    function showSoftyQueen() {
+      hideAll();
+      document.getElementById('softyQueen').style.display = 'block';
+      confetti({ particleCount: 250, spread: 80, origin: { y: 0.5 } });
+    }
+
+    function showEY() {
+      hideAll();
+      document.getElementById('eyEmployee').style.display = 'block';
+      confetti({ particleCount: 250, spread: 80, origin: { y: 0.5 } });
+    }
+
+    function showExtraMolu() {
+      hideAll();
+      document.getElementById('extraMolu').style.display = 'block';
+      confetti({ particleCount: 250, spread: 80, origin: { y: 0.5 } });
+    }
+
+    function showEzz() {
+      hideAll();
+      document.getElementById('ezz').style.display = 'block';
+      confetti({ particleCount: 250, spread: 80, origin: { y: 0.5 } });
+    }
+
+    function showMoluZz() {
+      hideAll();
+      document.getElementById('moluZz').style.display = 'block';
+      confetti({ particleCount: 250, spread: 80, origin: { y: 0.5 } });
+    }
+  </script>
+
+</body>
+</html>
